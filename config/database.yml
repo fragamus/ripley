@@ -2,25 +2,25 @@ development:
   adapter: mysql2
   encoding: utf8
   reconnect: false
-  database: ripley_development
+  database: rip_development
   pool: 5
   username: atpa
-  password: C0wabunga 
+  password: ATPAatpa12345678$ 
 test:
   adapter: mysql2
   encoding: utf8
   reconnect: false
-  database: ripley_test
+  database: rip_test
   pool: 5
   username: atpa 
-  password: C0wabunga 
+  password: ATPAatpa12345678$
 
 production:
   adapter: mysql2
   encoding: utf8
   reconnect: false
-  database: ripley_production
+  database: rip_production
   pool: 5
   username: atpa 
-  password: C0wabunga
+  password: ATPAatpa12345678$
 

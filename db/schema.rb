@@ -12,7 +12,7 @@
 
 ActiveRecord::Schema.define(version: 20160822182544) do
 
-  create_table "records", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
+  create_table "records", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=latin1" do |t|
     t.string   "documentstatus"
     t.string   "filetype"
     t.string   "boxdesc1"
@@ -72,7 +72,7 @@ ActiveRecord::Schema.define(version: 20160822182544) do
     t.index ["ssn"], name: "index_records_on_ssn", using: :btree
   end
 
-  create_table "things", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
+  create_table "things", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=latin1" do |t|
     t.string   "path"
     t.string   "h"
     t.string   "r"

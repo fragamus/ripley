@@ -43,7 +43,7 @@ namespace :utils do
 
 
 
-stop_set = Set.new(["/media","/media/floppy"])
+stop_set = Set.new(["/media","/media/floppy", "/media/floppy0", "/media/jxo", "/media/mgough"  ])
 
 
 while true do
