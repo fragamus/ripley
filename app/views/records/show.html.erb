@@ -1,0 +1,13 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>r:</strong>
+  <%= @record.r %>
+</p>
+<% @things.each{|x| %>
+<p>
+<%= link_to x.h, :controller => :things, :action => :show, :id => x.id %>
+</p>
+<% } %>
+
+

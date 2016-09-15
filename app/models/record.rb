@@ -1,5 +1,9 @@
 class Record < ApplicationRecord
 
+        def details
+                self.to_json
+        end
+
         def things 
                 Thing.find_things(self)
         end

@@ -1,10 +1,7 @@
 Rails.application.routes.draw do
-  get 'page/query'
+  resources :records,only: [:show]
+  resources :things,only: [:show]
 
-  get 'page/details'
-
-  get 'page/display'
-
-#  resources :photos
-#  resources :things, only: [:show]
+  root 'page#query'
+  get 'details' => 'page#details'
 end

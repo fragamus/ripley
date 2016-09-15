@@ -167,6 +167,8 @@ GEM
       activesupport (>= 4.0)
       sprockets (>= 3.0.0)
     sqlite3 (1.3.11)
+    table_for_collection (1.0.7)
+      actionpack
     test-unit (3.2.1)
       power_assert
     thor (0.19.1)
@@ -215,6 +217,7 @@ DEPENDENCIES
   spring
   spring-watcher-listen (~> 2.0.0)
   sqlite3
+  table_for_collection
   turbolinks (~> 5)
   tzinfo-data
   uglifier (>= 1.3.0)

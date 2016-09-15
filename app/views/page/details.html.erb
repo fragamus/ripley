@@ -1,2 +1,20 @@
-<h1>Page#details</h1>
-<p>Find me in app/views/page/details.html.erb</p>
+<h1>Query Results</h1>
+
+
+<p id="notice"><%= notice %></p>
+
+<% @records.each{|x| %>
+<section>
+<p>
+<%= link_to x.name, :controller => :records, :action => :show, :id => x.id %></br>
+<%= link_to x.ssn, :controller => :records, :action => :show, :id => x.id %></br>
+</br>
+<%= link_to JSON.parse(x.to_json).each_key.map{|k|"#{k}:#{x[k]}"}.join(" "), :controller => :records, :action => :show, :id => x.id %>
+</p>
+<section>
+</br>
+</br>
+</br>
+
+<% } %>
+

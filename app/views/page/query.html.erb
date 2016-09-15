@@ -1,2 +1,9 @@
-<h1>Page#query</h1>
-<p>Find me in app/views/page/query.html.erb</p>
+<h1>Query</h1>
+
+<%= form_tag("/details", method: "get") do %>
+  <%= label_tag(:q, "Name:") %>
+  <%= text_field_tag(:name) %>
+  <%= label_tag(:z, "SSN:") %>
+  <%= text_field_tag(:ssn) %>
+  <%= submit_tag("details") %>
+<% end %>
