@@ -5,6 +5,14 @@ class RecordsController < ApplicationController
   # GET /records/1.json
   def show
     @things = @record.things
+    numThings = @things.to_a.map{|x|x.h}.uniq.length
+    if numThings == 1 then
+        @thing=@things.first
+        tiff = @thing.path
+        @pdf = Rails.root.join("public", @thing.h+".pdf")
+        success = system("tiff2pdf", tiff, "-o", @pdf.to_s)
+        send_file(@pdf, :filename => "your_document.pdf", :disposition => 'inline', :type => "application/pdf")
+    end
   end
 
   private
