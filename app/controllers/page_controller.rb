@@ -1,4 +1,7 @@
 class PageController < ApplicationController
+
+  before_action :authenticate_user!
+
   def query
 
   end

@@ -1,26 +1,26 @@
 development:
-  adapter: mysql2
+  adapter: postgresql
   encoding: utf8
   reconnect: false
   database: rip_development
   pool: 5
-  username: atpa
-  password: ATPAatpa12345678$ 
+  username: mgough
+  password: changeme 
 test:
-  adapter: mysql2
+  adapter: postgresql
   encoding: utf8
   reconnect: false
   database: rip_test
   pool: 5
-  username: atpa 
-  password: ATPAatpa12345678$
+  username: mgough 
+  password: changeme
 
 production:
-  adapter: mysql2
+  adapter: postgresql
   encoding: utf8
   reconnect: false
-  database: rip_production
+  database: rip_development
   pool: 5
-  username: atpa 
-  password: ATPAatpa12345678$
+  username: mgough 
+  password: changeme
 

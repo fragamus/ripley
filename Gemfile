@@ -34,7 +34,7 @@ group :production do
   gem 'pg'
   gem 'rails_12factor'
 end
-gem 'mysql2', '~> 0.4.4'
 gem 'rio', '~> 0.5.1'
 gem 'mdb', '~> 0.3.1'
 gem 'table_for_collection'
+gem 'devise'

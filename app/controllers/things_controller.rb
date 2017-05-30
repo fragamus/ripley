@@ -1,4 +1,7 @@
 class ThingsController < ApplicationController
+
+  before_action :authenticate_user!
+
   before_action :set_thing, only: [:show]
 
   # GET /things/1
